@@ -1,4 +1,0 @@
-angular.module('account')
-
-		.controller('AccountCtrl', function($scope) {
-		});
