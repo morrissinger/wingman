@@ -50,11 +50,11 @@ gulp.task('git-check', function(done) {
 });
 
 /*******************/
-var protractor = require("gulp-protractor").protractor;
-
-gulp.src(["./src/tests/*.js"])
-		.pipe(protractor({
-			configFile: "test/protractor.config.js",
-			args: ['--baseUrl', 'http://127.0.0.1:8000']
-		}))
-		.on('error', function(e) { throw e })
+//var protractor = require("gulp-protractor").protractor;
+//
+//gulp.src(["./src/tests/*.js"])
+//		.pipe(protractor({
+//			configFile: "protractor.conf.js",
+//			args: ['--baseUrl', 'http://127.0.0.1:8000']
+//		}))
+//		.on('error', function(e) { throw e })
