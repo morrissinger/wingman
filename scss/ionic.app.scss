@@ -21,12 +21,55 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+#intro {
+  color: white;
+  background: url('../img/introBackground.jpg') 100% 50% / cover;
+}
+
 #logo {
   width: 100%;
+  padding: 20px;
 }
 
 .full-height {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.list .item.item-avatar.item-checkbox {
+  padding-left: 72px;
+
+  img {
+    top: 50%;
+    margin-top: -20px;
+  }
+  label.checkbox {
+    left: initial;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.item-checkbox label.checkbox {
+
+  &.has-offstate input:before {
+    transition: 200ms ease-in;
+    background: none;
+  }
+
+  &.has-offstate input:checked:before {
+    background: $positive;
+  }
+
+  i.icon {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    font-size: 19px;
+    z-index: -1;
+    color: $positive;
+  }
 }

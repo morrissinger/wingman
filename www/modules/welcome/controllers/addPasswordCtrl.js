@@ -1,4 +1,4 @@
-angular.module('signIn')
+angular.module('welcome')
 		.controller('addPasswordCtrl', function ($scope) {
 
 		});

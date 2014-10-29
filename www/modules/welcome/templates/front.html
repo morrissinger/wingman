@@ -1,12 +1,12 @@
-<ion-view title="Sign In">
-    <ion-content scroll="false" class="padding full-height">
+<ion-view>
+    <ion-content scroll="false" class="padding full-height" id="intro">
 
             <div class="">
                 <img src="img/logo.png" id="logo" />
             </div>
 
             <div class="">
-                <button class="button button-block button-positive" ui-sref="newAccount.addPassword">
+                <button class="button button-block button-positive" ui-sref="welcome.addPassword">
                     <i class="icon ion-social-facebook" ></i>&nbsp; Sign Up with Facebook
                 </button>
 
@@ -22,7 +22,7 @@
                     Already have a Wingman account?
                 </div>
 
-                <button class="button button-block button-stable">
+                <button class="button button-block button-stable" ui-sref="welcome.signIn">
                     Sign In
                 </button>
             </div>
