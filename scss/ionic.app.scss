@@ -53,6 +53,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   }
 }
 
+.item.item-avatar.item-heading-only {
+  h2 {
+    margin-top: 9px;
+  }
+}
 .item-checkbox label.checkbox {
 
   &.has-offstate input:before {

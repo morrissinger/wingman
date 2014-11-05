@@ -7838,6 +7838,9 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   .list .item.item-avatar.item-checkbox p {
     margin-bottom: 0; }
 
+.item.item-avatar.item-heading-only h2 {
+  margin-top: 9px; }
+
 .item-checkbox label.checkbox.has-offstate input:before {
   transition: 200ms ease-in;
   background: none; }
