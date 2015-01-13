@@ -63,21 +63,33 @@ module.exports = function(grunt) {
 			indexInjections: indexInjections,
 			indexSubInjections: indexSubInjections,
 			mockInjections: mockInjections,
-			mockSubInjections: mockSubInjections//,
-//			karma: {
-//				options: {
-//					transform: function (file) {
-//						return "			'" + file + "',";
-//					},
-//					starttag: '			/** injector:js */',
-//					endtag: '			/** endinjector */',
-//					destFile: 'karma.conf.js'
-//				},
-//				src: [
-//					'assets/modules/**/*Module.js',
-//					'assets/modules/**/**/*.js'
-//				]
-//			}
+			mockSubInjections: mockSubInjections,
+			karmaModules: {
+				options: {
+					transform: function (file) {
+						return "			'" + file + "',";
+					},
+					starttag: '		/** injector:karma:modules */',
+					endtag: '		/** endinjector:modules */',
+					destFile: 'karma.conf.js'
+				},
+				src: [
+					'www/modules/*/*.js'
+				]
+			},
+			karmaSubModules: {
+				options: {
+					transform: function (file) {
+						return "			'" + file + "',";
+					},
+					starttag: '		/** injector:karma:submodules */',
+					endtag: '		/** endinjector:submodules */',
+					destFile: 'karma.conf.js'
+				},
+				src: [
+					'www/modules/*/*/*.js'
+				]
+			}
 		},
 		watch: {
 			scripts: {

@@ -1,44 +1,121 @@
 var mockData = {
 	facebookFriends: {
-		page1: 	{
-			"data": [
-				{
-					"id": "0"
+		"0": {
+			page1: {
+				"data": [
+					{
+						"id": "0"
+					},
+					{
+						"id": "1"
+					},
+					{
+						"id": "2"
+					},
+					{
+						"id": "3"
+					},
+					{
+						"id": "4"
+					},
+					{
+						"id": "5"
+					},
+					{
+						"id": "6"
+					}
+				],
+				"paging": {
+					"next": "http://example.com/v2.2/friends2"
 				},
-				{
-					"id": "1"
-				},
-				{
-					"id": "2"
-				},
-				{
-					"id": "3"
-				},
-				{
-					"id": "4"
-				},
-				{
-					"id": "5"
-				},
-				{
-					"id": "6"
+				"summary": {
+					"total_count": 1000
 				}
-			],
-			"paging": {
-				"next": "http://example.com/v2.2/friends2"
 			},
-			"summary": {
-				"total_count": 1000
+			page2: {
+				"data": [
+				],
+				"paging": {
+					"previous": "http://example.com/v2.2/friends3"
+				},
+				"summary": {
+					"total_count": 1000
+				}
 			}
 		},
-		page2: {
-			"data": [
-			],
-			"paging": {
-				"previous": "http://example.com/v2.2/friends3"
+		"1": {
+			page1: {
+				"data": [
+					{
+						"id": "0"
+					},
+					{
+						"id": "1"
+					},
+					{
+						"id": "2"
+					},
+					{
+						"id": "3"
+					},
+					{
+						"id": "4"
+					},
+					{
+						"id": "5"
+					},
+					{
+						"id": "6"
+					},
+					{
+						"id": "7"
+					},
+					{
+						"id": "8"
+					},
+					{
+						"id": "9"
+					}
+				],
+				"paging": {
+					"next": "http://example.com/v2.2/friends2"
+				},
+				"summary": {
+					"total_count": 1000
+				}
 			},
-			"summary": {
-				"total_count": 1000
+			page2: {
+				"data": [
+					{
+						"id": "10"
+					},
+					{
+						"id": "11"
+					},
+					{
+						"id": "12"
+					},
+					{
+						"id": "13"
+					},
+					{
+						"id": "14"
+					}
+				],
+				"paging": {
+					"previous": "http://example.com/v2.2/friends1",
+					"next": "http://example.com/v2.2/friends3"
+				},
+				"summary": {
+					"total_count": 1000
+				}
+			},
+			page3: {
+				"data": [],
+				"paging": {
+					"previous": "http://example.com/v2.2/friends2",
+					"next": "http://example.com/v2.2/friends4"
+				}
 			}
 		}
 	},
@@ -81,5 +158,21 @@ var mockData = {
 				avatar: 'http://localhost:8100/test/mock/img/rochelleSeinfeld.jpg'
 			}
 		]
-	}
+	},
+	addedFriends: [
+		{
+			id: 0,
+			firstName: 'Jeff',
+			lastName: 'Ljungquist',
+			avatar: 'http://localhost:8100/test/mock/img/jeffLjungquist.jpg',
+			selected: true
+		},
+		{
+			id: 1,
+			firstName: 'Robert',
+			lastName: 'Beal',
+			avatar: 'http://localhost:8100/test/mock/img/robertBeal.jpg',
+			selected: true
+		}
+	]
 };

@@ -13,10 +13,7 @@ angular.module('starter', ['ionic', 'welcome', 'messages', 'nearby', 'search', '
 			/*
 			 * Mock data gets wired up to the back end here.
 			 */
-
-			$httpBackend.whenGET(/https:\/\/graph.facebook.com\/v2.2\/.*?\/friends/).respond(mockData.facebookFriends.page1);
-			$httpBackend.whenGET('http://example.com/v2.2/friends2').respond(mockData.facebookFriends.page2);
-			$httpBackend.whenPOST('http://api.wingman.com/users/byFacebookID').respond(mockData.users.byFacebookID);
+			createMockEndpoints($httpBackend);
 
 			/*
 			 * End mock data inclusion.

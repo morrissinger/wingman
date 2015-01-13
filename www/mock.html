@@ -21,8 +21,11 @@
 
 	<!-- mock data -->
 	<script src="test/mock/fixtures.js"></script>
+	<script src="test/mock/backend.js"></script>
+
     <!-- your app's js -->
-    <script src="test/mock/app.js"></script>
+	<script src="lib/underscore/underscore.js"></script>
+	<script src="test/mock/app.js"></script>
 
     <!-- injector:modules -->
 <script src="modules/aboutMe/aboutMe.js"></script>
@@ -42,6 +45,8 @@
 <script src="modules/welcome/controllers/frontCtrl.js"></script>
 <script src="modules/welcome/controllers/recoverPasswordCtrl.js"></script>
 <script src="modules/welcome/controllers/signInCtrl.js"></script>
+<script src="modules/welcome/resolvers/addFriendsResolver.js"></script>
+<script src="modules/welcome/services/facebookFriendsService.js"></script>
     <!-- endinjector:subs -->
 
 </head>

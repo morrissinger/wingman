@@ -26,7 +26,10 @@ angular.module('welcome', [])
 						views: {
 							welcome: {
 								templateUrl: 'modules/welcome/templates/addFriends.html',
-								controller: 'addFriendsCtrl'
+								controller: 'addFriendsCtrl',
+								resolve: {
+									facebookFriends: 'addFriendsResolver'
+								}
 							}
 						}
 					})

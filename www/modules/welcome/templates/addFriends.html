@@ -1,7 +1,7 @@
 <ion-view title="Add Friends">
 
 	<ion-nav-buttons side="right">
-		<button class="button button-clear button-positive" ui-sref="tab.nearby">Add</button>
+		<button class="button button-clear button-positive" ng-click="addFriends(selectedFriends)" ui-sref="tab.nearby">Add</button>
 	</ion-nav-buttons>
 
     <ion-content class="has-header has-footer" scroll="true" has-bouncing="true">
@@ -10,7 +10,7 @@
 			<div class="bar bar-header item-input-inset">
 				<label class="item-input-wrapper">
 					<i class="icon ion-ios7-search placeholder-icon"></i>
-					<input type="search" placeholder="Search">
+					<input type="search" placeholder="Search" ng-model="searchString">
 				</label>
 				<button class="button button-clear">
 					Cancel
@@ -20,16 +20,16 @@
 
 		<ul class="list">
 
-			<li ng-repeat="friend in friends" class="item item-avatar item-checkbox item-heading-only" href="#">
+			<li ng-repeat="friend in friends | filter:searchString | orderBy:'lastName'" class="item item-avatar item-checkbox item-heading-only" href="#">
 				<img ng-src="{{friend.avatar}}" />
 				<h2>{{friend.firstName}} {{friend.lastName}}</h2>
 
 				<label class="checkbox has-offstate">
-					<input type="checkbox">
+					<input type="checkbox" ng-model="friend.selected">
 					<i class="icon ion-plus"></i>
 				</label>
 			</li>
-
+			<li ng-hide="(friends | filter:searchString).length" class="item">No friends found.</li>
 		</ul>
 
     </ion-content>
