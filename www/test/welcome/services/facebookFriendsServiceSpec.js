@@ -31,7 +31,7 @@ describe('facebookFriendsService', function() {
 
 			// Create mock backend
 			createMockEndpoints($httpBackend);
-			$httpBackend.whenGET(/\/templates\/.*?\.html/).respond('');
+
 			/*
 			 * (5) Call done(), which was passed in to the function that you passed
 			 *     to the beforeEach call.
@@ -48,8 +48,6 @@ describe('facebookFriendsService', function() {
 		});
 
 		it ('should return mock facebookFriends data', function(done) {
-			$httpBackend.whenGET(/\/templates\//).respond('NO TEMPLATE');
-
 			facebookFriendsService.getUsers().success(function (data) {
 				expect(data).to.be.like(mockData.users.byFacebookID);
 				done();

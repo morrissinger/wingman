@@ -174,5 +174,16 @@ var mockData = {
 			avatar: 'http://localhost:8100/test/mock/img/robertBeal.jpg',
 			selected: true
 		}
-	]
+	],
+	signin: {
+		user: {
+			id: '123',
+			email: 'user@example.com',
+			firstName: 'Jeff',
+			lastName: 'Ljungquist',
+			displayName: 'Jeff Ljungquist',
+			thumbnail: 'http://localhost:8100/test/mock/img/jeffLjungquist.jpg'
+		},
+		'x-access-token': 'M5Q7xvcy5luG8ldXTg2UCIsvbdaZA3HxPmD5IFsCE4SyzWdVS4261xdO8qU6JcItZpZA21aZdP4OqqD5KbTlRcIuO4OAJusfqmuIUK475USJkqPyHWstVcfAsSlPDwzs'
+	}
 };

@@ -5,4 +5,7 @@ function createMockEndpoints($httpBackend) {
 	$httpBackend.whenPOST(/\/users\/byFacebookID/).respond(mockData.users.byFacebookID);
 	$httpBackend.whenPOST(/\/users\/[^\/]*?\/friends/).respond(mockData.addedFriends);
 	$httpBackend.whenGET(/templates.*?\.html/).respond('');
+	$httpBackend.whenPOST(/signin/).respond(mockData.signin);
+	$httpBackend.whenGET(/accessDenied/).respond(401, 'Unauthorized');
+
 }

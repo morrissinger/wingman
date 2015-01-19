@@ -16,6 +16,7 @@ var scripts = [
 			'/www/modules/messages/messages.js',
 			'/www/modules/nearby/nearby.js',
 			'/www/modules/search/search.js',
+			'/www/modules/session/session.js',
 			'/www/modules/tabs/tabs.js',
 			'/www/modules/welcome/welcome.js',
 		/** endinjector:modules */
@@ -25,11 +26,14 @@ var scripts = [
 			'/www/modules/messages/controllers/messagesCtrl.js',
 			'/www/modules/nearby/controllers/nearbyCtrl.js',
 			'/www/modules/search/controllers/searchCtrl.js',
+			'/www/modules/session/interceptors/sessionInterceptor.js',
+			'/www/modules/session/services/sessionService.js',
 			'/www/modules/welcome/controllers/addFriendsCtrl.js',
 			'/www/modules/welcome/controllers/addPasswordCtrl.js',
 			'/www/modules/welcome/controllers/frontCtrl.js',
 			'/www/modules/welcome/controllers/recoverPasswordCtrl.js',
 			'/www/modules/welcome/controllers/signInCtrl.js',
+			'/www/modules/welcome/resolvers/addFriendsResolver.js',
 			'/www/modules/welcome/services/facebookFriendsService.js',
 		/** endinjector:submodules */
 

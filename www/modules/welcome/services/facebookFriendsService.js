@@ -34,7 +34,7 @@ angular.module('welcome')
 						getPage(initialUrl);
 
 						return deferred.promise;
-					}
+					};
 
 					return getAllFriends('https://graph.facebook.com/v2.2/FACEBOOKID/friends');
 				},
