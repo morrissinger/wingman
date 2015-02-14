@@ -32,7 +32,7 @@
 			</a>
 
 		</div>
-		<div class="list card" ng-repeat="venue in venues" ng-click="getVenueDetails()">
+		<div class="list card" ng-repeat="venue in venues" ui-sref="tab.venueDetails">
 
 			<div class="item item-background-top">
 				<img ng-src="{{venue.img}}" />

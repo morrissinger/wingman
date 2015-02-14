@@ -31,10 +31,6 @@
 					$scope.decorate(venue);
 				});
 
-				$scope.getVenueDetails = function () {
-					$state.go('^.venueDetails');
-				}
-
 			});
 
 })();
