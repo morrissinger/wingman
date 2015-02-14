@@ -25,6 +25,7 @@ var scripts = [
 			'/www/modules/aboutMe/controllers/aboutMeCtrl.js',
 			'/www/modules/messages/controllers/messagesCtrl.js',
 			'/www/modules/nearby/controllers/nearbyCtrl.js',
+			'/www/modules/nearby/services/nearbyService.js',
 			'/www/modules/search/controllers/searchCtrl.js',
 			'/www/modules/session/interceptors/sessionInterceptor.js',
 			'/www/modules/session/services/sessionService.js',

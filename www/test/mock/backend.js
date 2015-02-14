@@ -7,5 +7,6 @@ function createMockEndpoints($httpBackend) {
 	$httpBackend.whenGET(/templates.*?\.html/).respond('');
 	$httpBackend.whenPOST(/signin/).respond(mockData.signin);
 	$httpBackend.whenGET(/accessDenied/).respond(401, 'Unauthorized');
+	$httpBackend.whenGET(/\/nearby/).respond(mockData.nearby);
 
 }

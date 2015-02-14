@@ -1,0 +1,15 @@
+#intro {
+  color: white;
+  background: url('../img/introBackground.jpg') 100% 50% / cover;
+}
+
+#logo {
+  width: 100%;
+  padding: 20px;
+}
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

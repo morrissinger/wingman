@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "wingman";
+  src: url("../fonts/wingman.eot");
+  src: url("../fonts/wingman.eot#iefix") format("embedded-opentype"),
+  url("../fonts/wingman.woff") format("woff"),
+  url("../fonts/wingman.ttf") format("truetype"),
+  url("../fonts/wingman.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-wingman"]:before, [class*=" icon-wingman"]:before,
+[class^="icon-wingman"]:after, [class*=" icon-wingman"]:after {
+  font-family: wingman;
+  font-style: normal;
+}
+.icon-wingman-club:before {
+  content: "\e800"
+}
+.icon-wingman-bar:before {
+  content: "\e801"
+}
+.icon-wingman-lounge:before {
+  content: "\e802"
+}
+.icon-wingman-star-half:before {
+  content: "\e803"
+}
+.icon-wingman-star-full:before {
+  content: "\e804"
+}

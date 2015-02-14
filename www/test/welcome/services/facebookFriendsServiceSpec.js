@@ -47,7 +47,7 @@ describe('facebookFriendsService', function() {
 			done();
 		});
 
-		it ('should return mock facebookFriends data', function(done) {
+		it ('should return mock facebookFriends data', function (done) {
 			facebookFriendsService.getUsers().success(function (data) {
 				expect(data).to.be.like(mockData.users.byFacebookID);
 				done();
