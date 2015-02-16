@@ -32,12 +32,15 @@ angular.module('starter', ['ionic', 'welcome', 'messages', 'nearby', 'search', '
 			});
 		});
 
-angular.element(document).ready(function() {
-	if (window.cordova) {
-		document.addEventListener('deviceready', function() {
-			angular.bootstrap(document, ['starter']);
-		}, false);
-	} else {
-		angular.bootstrap(document, ['starter']);
-	}
-});
+// MS: This is commented out for now because Angular was
+// getting bootstrapped twice.
+// TODO: Investigate for a true solution.
+//angular.element(document).ready(function() {
+//	if (window.cordova) {
+//		document.addEventListener('deviceready', function() {
+//			angular.bootstrap(document, ['starter']);
+//		}, false);
+//	} else {
+//		angular.bootstrap(document, ['starter']);
+//	}
+//});
