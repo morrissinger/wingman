@@ -125,37 +125,37 @@ var mockData = {
 				id: 0,
 				firstName: 'Jeff',
 				lastName: 'Ljungquist',
-				avatar: 'http://192.168.1.5:8100/test/mock/img/jeffLjungquist.jpg'
+				avatar: '/test/mock/img/jeffLjungquist.jpg'
 			},
 			{
 				id: 1,
 				firstName: 'Robert',
 				lastName: 'Beal',
-				avatar: 'http://192.168.1.5:8100/test/mock/img/robertBeal.jpg'
+				avatar: '/test/mock/img/robertBeal.jpg'
 			},
 			{
 				id: 2,
 				firstName: 'Chris',
 				lastName: 'Bell',
-				avatar: 'http://192.168.1.5:8100/test/mock/img/chrisBell.jpg'
+				avatar: '/test/mock/img/chrisBell.jpg'
 			},
 			{
 				id: 3,
 				firstName: 'Kennebelle',
 				lastName: 'DeLuca',
-				avatar: 'http://192.168.1.5:8100/test/mock/img/kennebelleDeLuca.jpg'
+				avatar: '/test/mock/img/kennebelleDeLuca.jpg'
 			},
 			{
 				id: 4,
 				firstName: 'Josephine',
 				lastName: 'Aquino',
-				avatar: 'http://192.168.1.5:8100/test/mock/img/josephineAquino.jpg'
+				avatar: '/test/mock/img/josephineAquino.jpg'
 			},
 			{
 				id: 5,
 				firstName: 'Rochelle',
 				lastName: 'Seinfeld',
-				avatar: 'http://192.168.1.5:8100/test/mock/img/rochelleSeinfeld.jpg'
+				avatar: '/test/mock/img/rochelleSeinfeld.jpg'
 			}
 		]
 	},
@@ -164,14 +164,14 @@ var mockData = {
 			id: 0,
 			firstName: 'Jeff',
 			lastName: 'Ljungquist',
-			avatar: 'http://192.168.1.5:8100/test/mock/img/jeffLjungquist.jpg',
+			avatar: '/test/mock/img/jeffLjungquist.jpg',
 			selected: true
 		},
 		{
 			id: 1,
 			firstName: 'Robert',
 			lastName: 'Beal',
-			avatar: 'http://192.168.1.5:8100/test/mock/img/robertBeal.jpg',
+			avatar: '/test/mock/img/robertBeal.jpg',
 			selected: true
 		}
 	],
@@ -182,7 +182,7 @@ var mockData = {
 			firstName: 'Jeff',
 			lastName: 'Ljungquist',
 			displayName: 'Jeff Ljungquist',
-			thumbnail: 'http://192.168.1.5:8100/test/mock/img/jeffLjungquist.jpg'
+			thumbnail: '/test/mock/img/jeffLjungquist.jpg'
 		},
 		'x-access-token': 'M5Q7xvcy5luG8ldXTg2UCIsvbdaZA3HxPmD5IFsCE4SyzWdVS4261xdO8qU6JcItZpZA21aZdP4OqqD5KbTlRcIuO4OAJusfqmuIUK475USJkqPyHWstVcfAsSlPDwzs'
 	},
@@ -197,7 +197,7 @@ var mockData = {
 			men: 0.62,
 			age: 29,
 			interests: ['Dogs', 'Cats', 'Otters', 'Birds', 'Lizards'],
-			img: 'http://192.168.1.4:8100/test/mock/img/beantownPub.jpg'
+			img: '/test/mock/img/beantownPub.jpg'
 		},
 		{
 			id: '2',
@@ -209,7 +209,7 @@ var mockData = {
 			men: 0.11,
 			age: 19,
 			interests: ['Places', 'Cars', 'Keyboards'],
-			img: 'http://192.168.1.4:8100/test/mock/img/thePlace.jpg'
+			img: '/test/mock/img/thePlace.jpg'
 		},
 		{
 			id: '3',
@@ -221,7 +221,7 @@ var mockData = {
 			men: 0.79,
 			age: 35,
 			interests: ['Samantha', 'Ugly Clothes', 'Bad Smells'],
-			img: 'http://192.168.1.4:8100/test/mock/img/theMiddleEast.jpg'
+			img: '/test/mock/img/theMiddleEast.jpg'
 		}
 	]
 
