@@ -29,3 +29,32 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .pane, .view {
   background: #eee;
 }
+
+div.bar {
+
+  & > .button:first-child {
+    margin-right: 11px;
+  }
+
+  & > .button + .button.button-swap:last-child,
+  & > .button.button-swap:last-child {
+    position: relative;
+    top: initial;
+    bottom: initial;
+    right: initial;
+  }
+
+  & > .button {
+    min-height: 27px;
+    line-height: 28px;
+  }
+
+  & > .button.button-swap {
+    width: 50px;
+  }
+
+  &.item-input-inset {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

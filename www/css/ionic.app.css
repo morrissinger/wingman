@@ -7187,3 +7187,19 @@ a.button {
 
 .pane, .view {
   background: #eee; }
+
+div.bar > .button:first-child {
+  margin-right: 11px; }
+div.bar > .button + .button.button-swap:last-child, div.bar > .button.button-swap:last-child {
+  position: relative;
+  top: initial;
+  bottom: initial;
+  right: initial; }
+div.bar > .button {
+  min-height: 27px;
+  line-height: 28px; }
+div.bar > .button.button-swap {
+  width: 50px; }
+div.bar.item-input-inset {
+  padding-left: 8px;
+  padding-right: 8px; }
